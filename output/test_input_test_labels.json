@@ -1,0 +1,1 @@
+[{"sequence": "I hated this movie. The acting sucked.", "labels": ["negative", "positive"], "scores": [0.9916267991065979, 0.008373180404305458]}, {"sequence": "This movie didn't quite live up to my high expectations, but overall I still really enjoyed it.", "labels": ["negative", "positive"], "scores": [0.8148513436317444, 0.18514865636825562]}]

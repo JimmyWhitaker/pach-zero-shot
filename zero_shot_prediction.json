@@ -1,0 +1,32 @@
+{
+    "pipeline": {
+      "name": "zero_shot_prediction"
+    },
+    "description": "A pipeline runs a zero shot model on inputs.",
+    "transform": {
+      "image": "jimmywhitaker/zero-shot:v0.1",
+      "cmd": [ "python3", "zs_predict.py", 
+        "--sequences", "/pfs/input_sequences/", 
+        "--labels", "/pfs/candidate_labels/", 
+        "--output", "/pfs/out/" ]
+    },
+    "parallelism_spec": {
+      "constant": "1"
+    },
+    "input": {
+      "cross": [
+        {
+          "pfs": {
+            "repo": "input_sequences",
+            "glob": "/*"
+          }
+        },
+        {
+          "pfs": {
+            "repo": "candidate_labels",
+            "glob": "/*"
+          }
+        }
+      ]
+    }
+  }
