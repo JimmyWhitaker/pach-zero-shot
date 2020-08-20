@@ -1,4 +1,4 @@
-# Zero Shot Pach
+# Pach Zero Shot
 Scaling Zero Shot learning from Hugging Face to production with Pachyderm. 
 
 Hugging Face came out with [this](https://discuss.huggingface.co/t/new-pipeline-for-zero-shot-text-classification/681), and I wanted to scale it with [Pachyderm](https://pachyderm.io/).
