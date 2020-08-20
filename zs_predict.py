@@ -7,16 +7,16 @@ import json
 parser = argparse.ArgumentParser(description="Zero Shot Predictor")
 parser.add_argument("--sequences",
                     metavar="DIR",
-                    help="input video or directory of videos",
+                    help="input sequences to be classified",
                     default="./input")
 parser.add_argument("--labels",
                     metavar="DIR",
-                    help="input video or directory of videos",
+                    help="labels to be applied to sequences",
                     default="./labels")
 parser.add_argument("--output",
                     metavar="DIR",
                     default="./output",
-                    help="output directory for extracted frames")
+                    help="output directory for predictions")
 
 def get_single_file_from_path(input_path):
     """

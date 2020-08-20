@@ -27,7 +27,7 @@ Zero Shot Predictor
 
 optional arguments:
   -h, --help       show this help message and exit
-  --sequences DIR  input video or directory of videos
-  --labels DIR     input video or directory of videos
-  --output DIR     output directory for extracted frames
+  --sequences DIR  input sequences to be classified
+  --labels DIR     labels to be applied to sequences
+  --output DIR     output directory for predictions
 ```
